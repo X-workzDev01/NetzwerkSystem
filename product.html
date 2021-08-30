@@ -65,7 +65,7 @@
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <li><a class="dropdown-item" href="#">Apple</a></li>
                         <li><a class="dropdown-item" href="#">Dell</a></li>
-                        <li><a class="dropdown-item" href="#">Lenova/Thinkpad</a></li>
+                        <li><a class="dropdown-item" href="#laptop">Lenova/Thinkpad</a></li>
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
@@ -350,83 +350,9 @@
             <h2 class="title"> Laptops</h2>
             <div class="row">
                 <div id="del" class="col-lg-3"></div>
-                <!---- <script>
-                    fetch('json/thinkpad.json')
-                        .then(function(response) {
-                            return response.json();
-                        })
-                        //'<div class="col-lg-3">'
-                        .then(function(levo) {
-                            for (let i = 0; i < levo.length; i++) {
-                                document.getElementById("del").innerHTML += '<div class="card "style="width: 18rem;">
-                                    <img src="img/t5.webp" class="card-img-top photo" alt="..."><h5 class="card-title">Product 
-                                        Name:' + levo[i].title + '</h5><p class="card-text"> ' + levo[i].description + '</p><div class="list-group-item">Processor : ' + levo[i].processor + '</div><div class="list-group-item">Ram & HardDisk :' + levo[i].ramharddisk + '</div><div class="list-group-item">Operating System :' + levo[i].operatingsystem + '</div><div class="list-group-item" style="color: red;"> Availability: ' + levo[i].available + '</div></div><hr>';
-
-                            }
-                        })
-                        .catch(function(err) {
-                            console.log(err);
-                        })
-                </script>---->
-                <!---<script>
-                    $(document).ready(function() {
-                        $.getJSON("../json/thinkpad.json", function(data) {
-                            var data = '';
-                            $.each(data, function(key, value) {
-                                data += '<h6>' + value.title + '</h6>';
-                                data += '<h6>' + value.description + '</h6>';
-                                data += '<h6>' + value.processor + '</h6>';
-                                data += '<h6>' + value.ramharddisk + '</h6>';
-                                data += '<h6>' + value.operatingsystem + '</h6>';
-                                data += '<h6>' + value.available + '</h6>';
-
-                            });
-                            $('#del').append(data);
-
-                        });
-
-                    });
-                </script>--->
-                <script src="https://code.jquery.com/jquery-3.5.1.js">
-                </script>
-                <!--<script>
-                    $(document).ready(function() {
-
-                        // FETCHING DATA FROM JSON FILE
-                        $.getJSON("json/thinkpad.json",
-                            function(data) {
-                                var student = '';
-
-                                // ITERATING THROUGH OBJECTS
-                                $.each(data, function(key, value) {
-
-                                    //CONSTRUCTION OF ROWS HAVING
-                                    // DATA FROM JSON OBJECT
-                                    student += '<div class="card "style="width: 18rem;"><img src="img/t5.webp" class="card-img-top photo" alt="...">';
-                                    student += '<h5 class="card-title">' +
-                                        value.title + '</h5>';
-
-                                    student += '<p class="card-text">' +
-                                        value.description + '</p>';
-
-                                    student += '<div class="list-group-item">' +
-                                        value.processor + '</div>';
-
-                                    student += '<div class="list-group-item">' +
-                                        value.ramharddisk + '</div>';
-                                    student += '<div class="list-group-item">' +
-                                        value.operatingsystem + '</div>';
-                                    student += '<div class="list-group-item" style="color:red;">' +
-                                        value.available + '</div>';
-
-                                    student += '</div>';
-                                });
-
-                                //INSERTING ROWS INTO TABLE 
-                                $('#del').append(student);
-                            });
-                    });
-                </script>-->
+                
+               
+                
                 <script>
                     async function setNotification() {
                         var t = await getMasterProd();
